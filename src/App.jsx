@@ -8,6 +8,11 @@ import Filter from './components/Filter'
 // import Article from './components/Article'
 // import Footer from './components/Footer'
 
+// Importing the react-dates files
+import 'react-dates/initialize';
+import 'react-dates/lib/css/_datepicker.css';
+
+
 const App = () => {
   const apiData = () => {
     const apiKey = '324369bedbcf4ccbb3c61134b2d0da9d'
@@ -19,10 +24,9 @@ const App = () => {
   }
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <h1>Hello World</h1>
-      </header>
-      {apiData()}
+      </header> */}
       <Filter/>
     </div>
   )
