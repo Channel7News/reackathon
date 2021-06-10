@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 const SearchBar = () => {
   const products = [
-    "hair brush",
-    "mouth wash",
-    "mouth guard",
-    "hair straightener",
-    "soap wash",
+    "Placeholder #1",
+    "Placeholder #1",
+    "Placeholder #1",
+    "Placeholder #1",
+    "Please don't remove this yet",
   ];
 
   const [searchValue, setSearchValue] = useState("");
