@@ -3,7 +3,9 @@ import React from 'react'
 import { StyledNav, StyledNavList, StyledNavSelect } from '../styles/Navbar'
 import CountrySelector from './CountrySelector'
 
-const Navbar = () => {
+const Navbar = (props) => {
+  const { handleCountryChange } = props
+
   return (
     <div>
       <StyledNav>
@@ -32,7 +34,7 @@ const Navbar = () => {
             }}
           >
             <label htmlFor="countries">Select a Country:</label>
-            <CountrySelector />
+            <CountrySelector handleCountryChange={handleCountryChange} />
           </div>
         </StyledNavList>
       </StyledNav>

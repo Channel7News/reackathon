@@ -2,7 +2,9 @@ import React from 'react'
 
 import { StyledNavSelect } from '../styles/Navbar'
 
-const CountrySelector = () => {
+const CountrySelector = (props) => {
+  const { handleCountryChange } = props
+
   const countryList = [
     {
       country: 'Australia',
@@ -26,8 +28,12 @@ const CountrySelector = () => {
     },
   ]
 
+  const handleSelect = (event) => {
+    handleCountryChange(event.target.value)
+  }
+
   return (
-    <StyledNavSelect>
+    <StyledNavSelect onChange={handleSelect}>
       {countryList.map(({ country, code }, index) => {
         return (
           <option key={index} value={code}>
