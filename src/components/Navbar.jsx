@@ -1,9 +1,43 @@
 import React from 'react'
 
-const Navbar = () => {
+import { StyledNav, StyledNavList, StyledNavSelect } from '../styles/Navbar'
+import CountrySelector from './CountrySelector'
+
+const Navbar = (props) => {
+  const { handleCountryChange } = props
+
   return (
     <div>
-      <h1>Nav</h1>
+      <StyledNav>
+        <StyledNavList>
+          <div
+            style={{
+              width: '30%',
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              alignItems: 'center',
+            }}
+          >
+            <label htmlFor="categories">Select a Category:</label>
+            <StyledNavSelect name="categories">
+              <option value="test">Test</option>
+              <option value="potato">Potato</option>
+            </StyledNavSelect>
+          </div>
+
+          <div
+            style={{
+              width: '30%',
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              alignItems: 'center',
+            }}
+          >
+            <label htmlFor="countries">Select a Country:</label>
+            <CountrySelector handleCountryChange={handleCountryChange} />
+          </div>
+        </StyledNavList>
+      </StyledNav>
     </div>
   )
 }
