@@ -1,0 +1,266 @@
+{
+  "status": "ok",
+  "totalResults": 54416,
+  "articles": [
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "https://www.engadget.com/about/editors/andrew-tarantola",
+      "title": "IBM's CodeNet dataset can teach AI to translate computer languages",
+      "description": "IBM researchers have crafted a Rosetta Stone for programming code..",
+      "url": "https://www.engadget.com/ibm-codenet-dataset-can-teach-ai-to-translate-computer-languages-020052618.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-05/e5dfa070-b1e4-11eb-8ffd-c77387193c53",
+      "publishedAt": "2021-05-11T02:00:52Z",
+      "content": "AI and machine learning systems have become increasingly competent in recent years, capable of not just understanding the written word but writing it as well. But while these artificial intelligences… [+5352 chars]"
+    },
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Khari Johnson",
+      "title": "AI Could Soon Write Code Based on Ordinary Language",
+      "description": "Microsoft reveals plans to bring GPT-3, best known for generating text, to programming. “The code writes itself,” CEO Satya Nadella says.",
+      "url": "https://www.wired.com/story/ai-write-code-ordinary-language/",
+      "urlToImage": "https://media.wired.com/photos/60ad5c13c9a03589c58256a3/191:100/w_1280,c_limit/business_microsoft-build.jpg",
+      "publishedAt": "2021-05-26T18:15:45Z",
+      "content": "In recent years, researchers have used artificial intelligence to improve translation between programming languages or automatically fix problems. The AI system DrRepair, for example, has been shown … [+2381 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Ron Miller",
+      "title": "Salesforce is bringing drag and drop interactive components to its low-code toolkit",
+      "description": "Low code and no code tools abound these days, as the industry attempts to give non-technical end users the ability to create applications without code (or very little anyway). Salesforce has been a big proponent of this approach to help reduce the complexity …",
+      "url": "http://techcrunch.com/2021/05/12/salesforce-is-bringing-drag-and-drop-interactive-components-to-its-low-code-toolkit/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/05/GettyImages-1134004863.jpg?w=600",
+      "publishedAt": "2021-05-12T13:04:30Z",
+      "content": "Low code and no code tools abound these days, as the industry attempts to give non-technical end users the ability to create applications without code (or very little anyway). Salesforce has been a b… [+2841 chars]"
+    },
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Dan Goodin, Ars Technica",
+      "title": "A Never-Before-Seen Wiper Malware Is Hitting Israeli Targets",
+      "description": "The malicious code, which masquerades as ransomware, appears to come from a hacking group with ties to Iran.",
+      "url": "https://www.wired.com/story/never-before-seen-wiper-malware-hitting-israeli-targets/",
+      "urlToImage": "https://media.wired.com/photos/60aed1df4440b920d7993cca/191:100/w_1280,c_limit/ars-malware-security.jpg",
+      "publishedAt": "2021-05-27T13:00:00Z",
+      "content": "Researchers say they have uncovered new disk-wiping malware that is disguising itself as ransomware as it unleashes destructive attacks on Israeli targets.\r\nThis story originally appeared on Ars Tech… [+4039 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "https://www.engadget.com/about/editors/igor-bonifacic",
+      "title": "Apple Music for Android offers more details on upcoming lossless streaming",
+      "description": "Conducting an APK teardown of the latest version of the Apple Music app for Android, 9to5Google found code snippets referencing two different tiers of high-fidelity audio..",
+      "url": "https://www.engadget.com/apple-music-lossless-streaming-android-apk-223911312.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-05/c5e52b90-b500-11eb-97e7-eef96f58eb59",
+      "publishedAt": "2021-05-14T22:39:11Z",
+      "content": "It was only earlier this month 9to5Macfound evidence to suggest Apple is preparing to launch a lossless offering within Music, and now its sister site has uncovered more information about the potenti… [+738 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Frederic Lardinois",
+      "title": "GitLab acquires UnReview as it looks to bring more ML tools to its platform",
+      "description": "DevOps platform GitLab today announced that it has acquired UnReview, a machine learning-based tool that helps software teams recommend the best reviewers for when developers want to check in their latest code. GitLab, which is looking to bring more of these …",
+      "url": "http://techcrunch.com/2021/06/02/gitlab-acquires-unreview-as-it-looks-to-bring-more-ml-tools-to-its-platform/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/06/GettyImages-483773163-1.jpg?w=533",
+      "publishedAt": "2021-06-02T16:00:55Z",
+      "content": "DevOps platform GitLab today announced that it has acquired UnReview, a machine learning-based tool that helps software teams recommend the best reviewers for when developers want to check in their l… [+3149 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "https://www.engadget.com/about/editors/igor-bonifacic",
+      "title": "Google Home Max is $150 for the first time since Black Friday",
+      "description": "A4C has discounted the smart speaker to $199.95. Using the checkout code “SLICK25,” you can get an additional $49.98 off the Home Max, making it $149.97 before tax and shipping.",
+      "url": "https://www.engadget.com/google-home-max-sale-161147884.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-05/2c87ba40-b4cd-11eb-ba7f-cb5417b0e922",
+      "publishedAt": "2021-05-14T16:11:47Z",
+      "content": "Google may have retired the Home Max\r\n at the end of last year, but you can still find it on sale at the odd online retailer. And as it just so happens, A4C has discounted the smart speaker to $199.9… [+1026 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Mary Ann Azevedo",
+      "title": "SpecTrust raises millions to fight cybercrime with its no-code platform",
+      "description": "Risk defense startup SpecTrust is emerging from stealth today with a $4.3 million seed raise and a public launch. Cyber Mentor Fund led the round, which also included participation from Rally Ventures, SignalFire, Dreamit Ventures and Legion Capital. SpecTrus…",
+      "url": "http://techcrunch.com/2021/05/13/spectrust-raises-millions-to-fight-cybercrime-with-no-code-platform/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2020/03/GettyImages-1159096305.jpg?w=608",
+      "publishedAt": "2021-05-13T15:00:55Z",
+      "content": "Risk defense startup SpecTrust is emerging from stealth today with a $4.3 million seed raise and a public launch.\r\nCyber Mentor Fund led the round, which also included participation from Rally Ventur… [+3954 chars]"
+    },
+    {
+      "source": {
+        "id": "mashable",
+        "name": "Mashable"
+      },
+      "author": "Joseph Green",
+      "title": "Learn how to code with Python with this programming bundle",
+      "description": "TL;DR: The Absolute Python Programming Certification Bundle is on sale for £21.21 as of May 24, saving you 95% on list price.\n\nWith 2021 continuing to throw us a lot of curveballs, you might be wondering what you can do to make the most out of your time. Whil…",
+      "url": "https://mashable.com/uk/shopping/may-24-learn-to-code-python-class-on-sale/",
+      "urlToImage": "https://mondrian.mashable.com/2021%252F05%252F24%252F4b%252F3644af164ed140baa0289d9b69efe333.1485c.jpg%252F1200x630.jpg?signature=BIOIjqYcWUNV3i8ZJe7M6smOjFw=",
+      "publishedAt": "2021-05-24T04:00:00Z",
+      "content": "TL;DR: The Absolute Python Programming Certification Bundle is on sale for £21.21 as of May 24, saving you 95% on list price.\r\nWith 2021 continuing to throw us a lot of curveballs, you might be wonde… [+1914 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Lifehacker.com"
+      },
+      "author": "Elizabeth Yuko",
+      "title": "Has Sara Lee Recalled Your Dessert for 'Undeclared Peanuts'?",
+      "description": "Even if you’ve never purchased a Sara Lee product, you’re probably familiar with their long-running jingle, which makes the bold claim that “nobody doesn’t like” their line of frozen desserts and other tasty carbohydrates. But it looks like they may need to t…",
+      "url": "https://lifehacker.com/has-sara-lee-recalled-your-dessert-for-undeclared-peanu-1846885534",
+      "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/10347660afcb33f9eb4c5361220c160a.jpg",
+      "publishedAt": "2021-05-13T16:00:00Z",
+      "content": "Even if youve never purchased a Sara Lee product, youre probably familiar with their long-running jingle, which makes the bold claim that nobody doesnt like their line of frozen desserts and other ta… [+2557 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "Seths.blog"
+      },
+      "author": "Seth Godin",
+      "title": "Code words",
+      "description": "That’s all language is. “Banana” is not a fruit. It’s a word that we use in English to identify a fruit. And code words work beautifully as long as the person you’re seeking to communicate with understands the word the way you think they do. Often, when peopl…",
+      "url": "https://seths.blog/2021/05/code-words/",
+      "urlToImage": "https://149521506.v2.pressablecdn.com/wp-content/uploads/2018/06/seth_godin_ogimages_v02_1806133-1.jpg",
+      "publishedAt": "2021-05-23T08:40:00Z",
+      "content": "That’s all language is.\r\n“Banana” is not a fruit. It’s a word that we use in English to identify a fruit.\r\nAnd code words work beautifully as long as the person you’re seeking to communicate with und… [+227 chars]"
+    },
+    {
+      "source": {
+        "id": "mashable",
+        "name": "Mashable"
+      },
+      "author": "Jae Thomas",
+      "title": "Learn to code for cheap with this 27-course bundle on sale",
+      "description": "TL;DR: Want to learn to code? As of May 30, get the 27-course Premium Learn to Code 2021 Certification Bundle for only $20.\n\nCoding can be overwhelming, but with the right instruction, you can develop knowledge you can use. The affordable Premium Learn to Cod…",
+      "url": "https://mashable.com/shopping/may-30-the-premium-learn-to-code-2021-certification-bundle/",
+      "urlToImage": "https://mondrian.mashable.com/2021%252F05%252F30%252F90%252F82948b7898a6412dbdcbbc28850e3e7b.5f49f.jpg%252F1200x630.jpg?signature=Y48CI7aqJnlgr9uTmzIzKBE0gZE=",
+      "publishedAt": "2021-05-30T09:00:00Z",
+      "content": "TL;DR: Want to learn to code? As of May 30, get the 27-coursePremium Learn to Code 2021 Certification Bundle for only $20.\r\nCoding can be overwhelming, but with the right instruction, you can develop… [+1500 chars]"
+    },
+    {
+      "source": {
+        "id": "mashable",
+        "name": "Mashable"
+      },
+      "author": "Jae Thomas",
+      "title": "Learn to code JavaScript from this pay-what-you-want bundle",
+      "description": "TL;DR: Take your coding skills to the next level with this JavaScript Certification Bundle — and pay what you wish for it as of May 11.  \n\nWith this JavaScript Certification Bundle, you can jumpstart your career in coding and programming with 50 hours of easy…",
+      "url": "https://mashable.com/shopping/may-11-2021-learn-to-code-javascript-certification-bundle/",
+      "urlToImage": "https://mondrian.mashable.com/2021%252F05%252F11%252F01%252F9dcb191beea4480d88652deb1029dedd.23138.jpg%252F1200x630.jpg?signature=v2L-7WNg9WmlljguulDKZNm008w=",
+      "publishedAt": "2021-05-11T09:00:00Z",
+      "content": "TL;DR: Take your coding skills to the next level with thisJavaScript Certification Bundle and pay what you wish for it as of May 11.  \r\nWith this JavaScript Certification Bundle, you can jumpstart yo… [+1376 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "https://www.engadget.com/about/editors/steve-dent",
+      "title": "Apple teases a Music announcement as more 'Lossless' clues appear",
+      "description": "An Apple teaser and newly discovered clues have reinforced the idea that Apple Music is about to launch a new HiFi tier..",
+      "url": "https://www.engadget.com/apple-music-might-soon-include-a-lossless-tier-105520597.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-05/12721ad0-b6f6-11eb-b7ef-b730e95b4101",
+      "publishedAt": "2021-05-17T10:55:20Z",
+      "content": "An Apple teaser and newly discovered clues have reinforced the idea that Apple Music is about to launch a new HiFi tier, MacRumors has reported. On Apple's Music site, there's a 15-second video (bott… [+1244 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "https://www.engadget.com/about/editors/kris-holt",
+      "title": "The White House, Uber and Lyft team up for free rides to COVID-19 vaccine sites",
+      "description": "The program will start soon and run until July 4th..",
+      "url": "https://www.engadget.com/white-house-uber-lyft-covid-19-vaccine-free-rides-160110663.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2020-08/c9deba70-db82-11ea-98df-9715935b2919",
+      "publishedAt": "2021-05-11T16:01:10Z",
+      "content": "President Joe Biden has announced a partnership with Uber and Lyft to offer everyone in the US free and discounted rides to and from COVID-19 vaccination sites. The program will start in the next two… [+2012 chars]"
+    },
+    {
+      "source": {
+        "id": "engadget",
+        "name": "Engadget"
+      },
+      "author": "https://www.engadget.com/about/editors/stack-commerce",
+      "title": "Get two years of PlayStation Plus for 25 percent off with this coupon",
+      "description": "This bundle of PlayStation Plus subscriptions can be stacked or shared with a friend. Either way, you get to enjoy all of your games and get more for free.",
+      "url": "https://www.engadget.com/playstation-plus-discount-145536783.html",
+      "urlToImage": "https://s.yimg.com/os/creatr-uploaded-images/2021-05/68cc5ce0-b8bf-11eb-b7fa-bb3d5d5b742b",
+      "publishedAt": "2021-05-24T14:55:36Z",
+      "content": "While single-player games like Cyberpunk 2077\r\n maintain a solid foothold in the gaming industry, online play is undoubtedly one of the hobby's biggest draws. For Sony fans specifically, this means b… [+1897 chars]"
+    },
+    {
+      "source": {
+        "id": null,
+        "name": "New York Times"
+      },
+      "author": "Alan Rappeport",
+      "title": "Rich Americans Like Bezos, Musk, Buffett Avoided Income Tax",
+      "description": "An analysis by ProPublica based on Internal Revenue Service documents showed billionaires like Jeff Bezos and Elon Musk benefited from vagaries in the tax code.",
+      "url": "https://www.nytimes.com/2021/06/08/us/politics/income-taxes-bezos-musk-buffett.html",
+      "urlToImage": "https://static01.nyt.com/images/2021/06/08/business/08dc-tax/08dc-tax-facebookJumbo.jpg",
+      "publishedAt": "2021-06-08T15:35:46Z",
+      "content": "In a separate editors note, the outlet said it was publishing the information quite selectively and carefully because we believe it serves the public interest in fundamental ways, allowing readers to… [+1668 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Ron Miller",
+      "title": "DataRobot expands platform and announces Zepl acquisition",
+      "description": "DataRobot, the Boston-based automated machine learning startup, had a bushel of announcements this morning as it expanded its platform to give technical and non-technical users alike something new. It also announced it has acquired Zepl, giving it an advanced…",
+      "url": "http://techcrunch.com/2021/05/11/datarobot-expands-platform-and-announces-zepl-acquisition/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/05/GettyImages-1299482894.jpg?w=700",
+      "publishedAt": "2021-05-11T13:26:06Z",
+      "content": "DataRobot, the Boston-based automated machine learning startup, had a bushel of announcements this morning as it expanded its platform to give technical and non-technical users alike something new. I… [+3091 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Alex Wilhelm",
+      "title": "Apple releases torrent of updates, and Wall Street yawns",
+      "description": "Today’s WWDC keynote from Apple covered a huge range of updates. From a new macOS to a refreshed watchOS to a new iOS, better privacy controls, FaceTime updates, and even iCloud+, there was something for everyone in the laundry list of new code. Apple’s keyno…",
+      "url": "http://techcrunch.com/2021/06/07/apple-releases-torrent-of-updates-and-wall-street-yawns/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/06/wwdc-2021-animoji-building-exterior-.jpg?w=711",
+      "publishedAt": "2021-06-07T19:55:48Z",
+      "content": "Today’s WWDC keynote from Apple covered a huge range of updates. From a new macOS to a refreshed watchOS to a new iOS, better privacy controls, FaceTime updates, and even iCloud+, there was something… [+2070 chars]"
+    },
+    {
+      "source": {
+        "id": "techcrunch",
+        "name": "TechCrunch"
+      },
+      "author": "Frederic Lardinois",
+      "title": "Lightrun raises $23M for its debugging and observability platform",
+      "description": "Lightrun, a startup that helps developers debug their live production code, today announced that it has raised a $23 million Series A round led by Insight Partners. Glilot Capital Partners, which led the company’s $4 million seed round, also participated in t…",
+      "url": "http://techcrunch.com/2021/05/26/lightrun-raises-23m-for-its-debugging-and-observability-platform/",
+      "urlToImage": "https://techcrunch.com/wp-content/uploads/2021/05/GettyImages-981582574.jpg?w=600",
+      "publishedAt": "2021-05-26T13:00:33Z",
+      "content": "Lightrun, a startup that helps developers debug their live production code, today announced that it has raised a $23 million Series A round led by Insight Partners. Glilot Capital Partners, which led… [+2697 chars]"
+    }
+  ]
+}

@@ -4,12 +4,13 @@ import SearchBar from "./filters/SearchBar";
 
 import { StyledFilter } from "../styles/Filter"
 
-const Filter = () => {
+const Filter = (props) => {
+  const {handleSearchValue} = props
   
   return (
     <StyledFilter>
       <DateFilter/>
-      <SearchBar />
+      <SearchBar handleSearchValue={handleSearchValue}/>
     </StyledFilter>
   );
 };
