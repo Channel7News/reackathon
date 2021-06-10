@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = (props) => {
+  const {handleSearchValue} = props
+
   const products = [
     "Placeholder #1",
     "Placeholder #1",
@@ -9,7 +11,6 @@ const SearchBar = () => {
     "Please don't remove this yet",
   ];
 
-  const [searchValue, setSearchValue] = useState("");
   const [inputValue, setInputValue] = useState("")
   
   const handleInputChange = (event) => {
@@ -20,7 +21,7 @@ const SearchBar = () => {
     event.preventDefault()
 
     // makes the inputValue the searched value when submitted
-    setSearchValue(inputValue)
+    handleSearchValue(inputValue)
   }
 
   return (
@@ -34,17 +35,6 @@ const SearchBar = () => {
         />
         <button>Search</button>
       </form>
-
-      {/* Test data - needs to be changed to PROD data */}
-      {products
-        .filter((product) => product.includes(searchValue))
-        .map((product, index) => {
-          return (
-            <div key={index}>
-              <li>{product}</li>
-            </div>
-          );
-        })}
     </div>
   );
 };
