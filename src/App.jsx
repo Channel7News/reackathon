@@ -5,13 +5,11 @@ import "./App.css";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Filter from './components/Filter'
-import CountrySelector from "./components/CountrySelector";
 // import Footer from './components/Footer'
 
 // Importing the react-dates files
 import 'react-dates/initialize';
 import 'react-dates/lib/css/_datepicker.css';
-
 
 const App = () => {
   const [articleData, setArticleData] = useState();
