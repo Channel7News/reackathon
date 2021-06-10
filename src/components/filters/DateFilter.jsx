@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { DateRangePicker } from "react-dates";
+import moment from "moment";
+import { START_DATE, END_DATE } from "react-dates/constants";
+
 
 const DateFilter = () => {
   const [startDate, setStartDate] = useState(null)
@@ -10,15 +13,17 @@ const DateFilter = () => {
     <div>
       <DateRangePicker
         startDate={startDate} // momentPropTypes.momentObj or null,
-        startDateId="startdate1" // PropTypes.string.isRequired,
+        startDateId={START_DATE} // PropTypes.string.isRequired,
         endDate={endDate} // momentPropTypes.momentObj or null,
-        endDateId="enddate1" // PropTypes.string.isRequired,
+        endDateId={END_DATE} // PropTypes.string.isRequired,
         onDatesChange={({ startDate, endDate }) => {
           setStartDate(startDate)
           setEndDate(endDate)
-        }} // PropTypes.func.isRequired,
+        }} // PropTypes.func.isRequired,.
+        isOutsideRange={(day) => day.isAfter(moment()) || day.isBefore(moment().subtract(5, 'year'))}
         focusedInput={focusedInput} // PropTypes.oneOf([START_DATE, END_DATE]) or null,
         onFocusChange={focusedInput => setFocusedInput( focusedInput )} // PropTypes.func.isRequired,
+        daySize={30}
       />
     </div>
   );
