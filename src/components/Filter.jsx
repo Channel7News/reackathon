@@ -1,11 +1,17 @@
-import React from 'react'
+import React from "react";
+import DateFilter from "./filters/DateFilter";
+import SearchBar from "./filters/SearchBar";
+
+import { StyledFilter } from "../styles/Filter"
 
 const Filter = () => {
+  
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <StyledFilter>
+      <DateFilter/>
+      <SearchBar />
+    </StyledFilter>
+  );
+};
 
-export default Filter
+export default Filter;

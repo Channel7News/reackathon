@@ -1,12 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import ArticlesList from './components/ArticlesList'
 
-import './App.css'
-import Header from './components/Header'
-import Navbar from './components/Navbar'
-import CountrySelector from './components/CountrySelector'
-// import Filter from './components/Filter'
+import "./App.css";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Filter from './components/Filter'
 // import Footer from './components/Footer'
+
+// Importing the react-dates files
+import 'react-dates/initialize';
+import 'react-dates/lib/css/_datepicker.css';
 
 const App = () => {
   const [articleData, setArticleData] = useState()
@@ -30,6 +33,7 @@ const App = () => {
     <div className="App">
       <Header />
       <Navbar handleCountryChange={handleCountryChange} />
+      <Filter/>
       <ArticlesList articleData={articleData} />
     </div>
   )
