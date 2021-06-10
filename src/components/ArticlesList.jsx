@@ -1,11 +1,19 @@
-import React from 'react'
+import React from "react";
+import { ArticlesContainer } from "../styles/ArticlesList";
+import Article from "./Article";
 
-const ArticlesList = () => {
+const ArticlesList = (props) => {
+  const { articleData } = props;
+
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <>
+      <ArticlesContainer>
+        {articleData.articles.map(function (article) {
+          <Article article={article} />;
+        })}
+      </ArticlesContainer>
+    </>
+  );
+};
 
-export default ArticlesList
+export default ArticlesList;
