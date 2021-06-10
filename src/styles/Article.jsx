@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ArticleContainer = styled.div`
-  width: 80%;
-  height: 200px;
+  width: 100%;
+  height: 300px;
   border: 5px solid black;
   display: flex;
   flex-direction: row;
@@ -17,6 +17,12 @@ export const ArticleTitle = styled.h1`
 `;
 
 export const ArticleSource = styled.h2`
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+`;
+
+export const ArticleLink = styled.a`
   font-size: 20px;
   margin-top: 5px;
   margin-left: 5px;
@@ -42,5 +48,6 @@ export const ArticleLeftSide = styled.div`
 export const ArticleImage = styled.img`
   border: 1px black;
   width: 80%;
-  height: 100%;
+  height: 98%;
+  border: 5px solid black;
 `;

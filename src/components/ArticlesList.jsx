@@ -4,13 +4,16 @@ import Article from "./Article";
 
 const ArticlesList = (props) => {
   const { articleData } = props;
+  // console.log(articleData);
 
   return (
     <>
       <ArticlesContainer>
-        {articleData.articles.map(function (article) {
-          <Article article={article} />;
-        })}
+        {articleData &&
+          articleData.articles.map(function (article) {
+            return <Article {...article} />;
+            // console.log(article);
+          })}
       </ArticlesContainer>
     </>
   );
