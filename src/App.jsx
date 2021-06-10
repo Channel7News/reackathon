@@ -16,19 +16,26 @@ const App = () => {
   const apiKey = '324369bedbcf4ccbb3c61134b2d0da9d'
 
   const [countryCode, setCountryCode] = useState('au')
-
   const handleCountryChange = (code) => {
     setCountryCode(code)
   }
 
   useEffect(() => {
-    fetch(
-      `https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${apiKey}`
-    )
-      .then((res) => res.json())
-      .then((data) => setArticleData(data))
+    // fetch(
+    //   `https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${apiKey}`
+    // )
+    //   .then((res) => res.json())
+    //   .then((data) => setArticleData(data))
+    fetch('./sample.json', {
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+      })
+      .then(res => res.json())
+      .then(data => setArticleData(data))
   })
-
+  
   return (
     <div className="App">
       <Header />
