@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { StyledNav, StyledNavList, StyledSelect } from '../styles/Navbar'
+import { StyledNav, StyledNavList, StyledNavSelect } from '../styles/Navbar'
+import CountrySelector from './CountrySelector'
 
 const Navbar = () => {
   return (
@@ -15,11 +16,11 @@ const Navbar = () => {
               alignItems: 'center',
             }}
           >
-            <label htmlFor="categories">Select a Category</label>
-            <StyledSelect name="categories">
+            <label htmlFor="categories">Select a Category:</label>
+            <StyledNavSelect name="categories">
               <option value="test">Test</option>
               <option value="potato">Potato</option>
-            </StyledSelect>
+            </StyledNavSelect>
           </div>
 
           <div
@@ -30,11 +31,8 @@ const Navbar = () => {
               alignItems: 'center',
             }}
           >
-            <label htmlFor="languages">Select a Language</label>
-            <StyledSelect>
-              <option value="english">English</option>
-              <option value="spanish">Spanish</option>
-            </StyledSelect>
+            <label htmlFor="countries">Select a Country:</label>
+            <CountrySelector />
           </div>
         </StyledNavList>
       </StyledNav>

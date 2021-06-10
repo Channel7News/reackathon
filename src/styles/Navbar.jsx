@@ -20,7 +20,7 @@ const StyledNavList = styled.ul`
   font-weight: bold;
 `
 
-const StyledSelect = styled.select`
+const StyledNavSelect = styled.select`
   width: 15vw;
   height: 4vh;
   &:focus {
@@ -30,4 +30,4 @@ const StyledSelect = styled.select`
   }
 `
 
-export { StyledNav, StyledNavList, StyledSelect }
+export { StyledNav, StyledNavList, StyledNavSelect }
