@@ -26,7 +26,17 @@ const App = () => {
     // )
     //   .then((res) => res.json())
     //   .then((data) => setArticleData(data))
-    fetch('./sample.json', {
+
+    // // Top Headlines sample
+    // fetch('./sample-topheadlines.json', {
+    //   headers : { 
+    //     'Content-Type': 'application/json',
+    //     'Accept': 'application/json'
+    //    }
+    //   })
+
+    // // Everything sample
+    fetch('./sample-everything.json', {
       headers : { 
         'Content-Type': 'application/json',
         'Accept': 'application/json'
