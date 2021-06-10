@@ -1,10 +1,16 @@
 import React from "react";
+import DateFilter from "./filters/DateFilter";
 import SearchBar from "./filters/SearchBar";
+
+import { StyledFilter } from "../styles/Filter"
 
 const Filter = () => {
   
   return (
-    <SearchBar />
+    <StyledFilter>
+      <DateFilter/>
+      <SearchBar />
+    </StyledFilter>
   );
 };
 
