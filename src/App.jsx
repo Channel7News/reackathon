@@ -3,7 +3,7 @@ import React from 'react'
 import './App.css'
 // import Header from './components/Header'
 // import Navbar from './components/Navbar'
-// import Filter from './components/Filter'
+import Filter from './components/Filter'
 // import ArticlesList from './components/ArticlesList'
 // import Article from './components/Article'
 // import Footer from './components/Footer'
@@ -23,6 +23,7 @@ const App = () => {
         <h1>Hello World</h1>
       </header>
       {apiData()}
+      <Filter/>
     </div>
   )
 }

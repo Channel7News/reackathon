@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
+import SearchBar from "./filters/SearchBar";
 
 const Filter = () => {
+  
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <SearchBar />
+  );
+};
 
-export default Filter
+export default Filter;
