@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import COLORS from './constants/COLORS'
 
 const StyledNav = styled.nav`
-  border: 1px solid black;
+  background-color: ${COLORS.primary};
+  border: 1px solid ${COLORS.primary};
   border-left: none;
   border-right: none;
   display: flex;
@@ -14,11 +16,18 @@ const StyledNavList = styled.ul`
   justify-content: space-around;
   padding-left: 0;
   width: 100%;
+  color: white;
+  font-weight: bold;
 `
 
 const StyledSelect = styled.select`
   width: 15vw;
   height: 4vh;
+  &:focus {
+    outline-color: white;
+    outline-style: double;
+    outline-width: 2px;
+  }
 `
 
 export { StyledNav, StyledNavList, StyledSelect }
