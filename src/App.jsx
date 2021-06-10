@@ -30,7 +30,17 @@ const App = () => {
     // fetch(
     //   `https://newsapi.org/v2/top-headlines?q=${searchValue}&country=${countryCode}&apiKey=${apiKey2}`
     // )
-    fetch('./sample.json', {
+
+    // // Top Headlines sample
+    // fetch('./sample-topheadlines.json', {
+    //   headers : { 
+    //     'Content-Type': 'application/json',
+    //     'Accept': 'application/json'
+    //    }
+    //   })
+
+    // // Everything sample
+    fetch('./sample-everything.json', {
       headers : { 
         'Content-Type': 'application/json',
         'Accept': 'application/json'
