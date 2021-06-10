@@ -46,8 +46,7 @@ export const ArticleLeftSide = styled.div`
 `;
 
 export const ArticleImage = styled.img`
-  border: 1px black;
-  width: 80%;
-  height: 98%;
+  width: 40%;
+  /* height: 98%; */
   border: 5px solid black;
 `;
