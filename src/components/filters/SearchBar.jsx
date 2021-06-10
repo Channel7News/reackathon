@@ -3,14 +3,6 @@ import React, { useState } from "react";
 const SearchBar = (props) => {
   const {handleSearchValue} = props
 
-  const products = [
-    "Placeholder #1",
-    "Placeholder #1",
-    "Placeholder #1",
-    "Placeholder #1",
-    "Please don't remove this yet",
-  ];
-
   const [inputValue, setInputValue] = useState("")
   
   const handleInputChange = (event) => {
