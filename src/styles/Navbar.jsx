@@ -18,6 +18,21 @@ const StyledNavList = styled.ul`
   width: 100%;
   color: white;
   font-weight: bold;
+
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+
+  }
+`
+
+const StyledNavDiv = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0.1rem 0rem;
 `
 
 const StyledNavSelect = styled.select`
@@ -28,6 +43,11 @@ const StyledNavSelect = styled.select`
     outline-style: double;
     outline-width: 2px;
   }
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    width: auto;
+
+  }
 `
 
-export { StyledNav, StyledNavList, StyledNavSelect }
+export { StyledNav, StyledNavList, StyledNavDiv, StyledNavSelect }

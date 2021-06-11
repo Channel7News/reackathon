@@ -51,12 +51,19 @@ const App = () => {
     //     .then((res) => res.json())
     //     .then((data) => setArticleData(data))
     // }
-
+    if (searchValue === "") {
     fetch(
-      `https://newsapi.org/v2/top-headlines?q=${searchValue}&category=${category}&country=${countryCode}&apiKey=${apiKey2}`
+      `https://newsapi.org/v2/top-headlines?category=${category}&country=${countryCode}&apiKey=${apiKey2}`
     )
       .then((res) => res.json())
       .then((data) => setArticleData(data))
+    } else {
+      fetch(
+        `https://newsapi.org/v2/top-headlines?q=${searchValue}&category=${category}&country=${countryCode}&apiKey=${apiKey2}`
+      )
+        .then((res) => res.json())
+        .then((data) => setArticleData(data))
+    }
 
     // Top Headlines sample
     // fetch('./sample-topheadlines.json', {
@@ -65,18 +72,17 @@ const App = () => {
     //     Accept: 'application/json',
     //   },
     // })
+    
+    // // Everything sample
+    //   fetch('./sample-everything.json', {
+    //     headers: {
+    //         'Content-Type': 'application/json',
+    //         Accept: 'application/json',
+    //       },
+    //   })
+    //     .then((res) => res.json())
+    //     .then((data) => setArticleData(data))
   }, [searchValue, category, countryCode])
-
-  // Everything sample
-  //   fetch('./sample-everything.json', {
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       Accept: 'application/json',
-  //     },
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => setArticleData(data))
-  // }, [searchValue, countryCode])
 
   return (
     <div className="App">
