@@ -13,8 +13,8 @@ import 'react-dates/lib/css/_datepicker.css'
 
 const App = () => {
   const [articleData, setArticleData] = useState()
-  const apiKey1 = '324369bedbcf4ccbb3c61134b2d0da9d'
-  // const apiKey2 = '4528ed13b69744e581384c6fa39e00de'
+  // const apiKey1 = '324369bedbcf4ccbb3c61134b2d0da9d'
+  const apiKey2 = '4528ed13b69744e581384c6fa39e00de'
 
   const [countryCode, setCountryCode] = useState('au')
   const handleCountryChange = (code) => {
@@ -33,7 +33,7 @@ const App = () => {
 
   useEffect(() => {
     fetch(
-      `https://newsapi.org/v2/top-headlines?q=${searchValue}&category=${category}&country=${countryCode}&apiKey=${apiKey1}`
+      `https://newsapi.org/v2/top-headlines?q=${searchValue}&category=${category}&country=${countryCode}&apiKey=${apiKey2}`
     )
       .then((res) => res.json())
       .then((data) => setArticleData(data))
