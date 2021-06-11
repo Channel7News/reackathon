@@ -1,10 +1,11 @@
 import React from 'react'
 
-import { StyledNav, StyledNavList, StyledNavSelect } from '../styles/Navbar'
+import { StyledNav, StyledNavList } from '../styles/Navbar'
+import CategorySelector from './CategorySelector'
 import CountrySelector from './CountrySelector'
 
 const Navbar = (props) => {
-  const { handleCountryChange } = props
+  const { handleCategoryChange, handleCountryChange } = props
 
   return (
     <div>
@@ -19,10 +20,7 @@ const Navbar = (props) => {
             }}
           >
             <label htmlFor="categories">Select a Category:</label>
-            <StyledNavSelect name="categories">
-              <option value="test">Test</option>
-              <option value="potato">Potato</option>
-            </StyledNavSelect>
+            <CategorySelector handleCategoryChange={handleCategoryChange} />
           </div>
 
           <div
