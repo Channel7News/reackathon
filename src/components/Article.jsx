@@ -15,13 +15,11 @@ const Article = ({ title, publishedAt, source, content, url, urlToImage }) => {
     <>
       <ArticleContainer>
         <ArticleLeftSide>
-          <ArticleTitle>{title}</ArticleTitle>
-          <ArticleDatePublished>{publishedAt}</ArticleDatePublished>
-          <ArticleSource> {source.name}</ArticleSource>
-          <ArticleLink href={url}> {url}</ArticleLink>
+          <ArticleTitle><ArticleLink href={url} target="_blank">{title}</ArticleLink></ArticleTitle>
+          <ArticleDatePublished><ArticleSource>{publishedAt.substring(0,10)} - {source.name}</ArticleSource></ArticleDatePublished>
           <ArticleDescription>{content}</ArticleDescription>
         </ArticleLeftSide>
-        <ArticleImage src={urlToImage} alt="Article Image" />
+        <ArticleImage src={urlToImage} alt={title} />
       </ArticleContainer>
     </>
   );

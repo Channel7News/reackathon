@@ -39,7 +39,7 @@ const App = () => {
     //    }
     //   })
 
-    // // Everything sample
+    // Everything sample
     fetch('./sample-everything.json', {
       headers : { 
         'Content-Type': 'application/json',
