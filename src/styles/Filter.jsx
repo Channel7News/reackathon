@@ -6,4 +6,5 @@ export const StyledFilter = styled.div`
   justify-content: space-evenly;
   align-items: center;
   background-color: yellow;
+  padding: 0.5rem 0;
 `
