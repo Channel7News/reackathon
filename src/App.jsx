@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import ArticlesList from './components/ArticlesList'
 
 import "./App.css";
@@ -26,10 +26,30 @@ const App = () => {
     setSearchValue(inputValue)
   }
 
+  const usePrevious = (value) => {
+    const ref = useRef()
+    useEffect(() => {
+      ref.current = value;
+    })
+    return ref.current;
+  }
+  const prevParams = usePrevious({searchValue, countryCode}) || {};
+  
   useEffect(() => {
-    // fetch(
-    //   `https://newsapi.org/v2/top-headlines?q=${searchValue}&country=${countryCode}&apiKey=${apiKey2}`
-    // )
+    // if (prevParams.searchValue !== searchValue) {
+    //   fetch(`https://newsapi.org/v2/everything?q=${searchValue}&apiKey=${apiKey2}`)
+    //     .then((res) => res.json())
+    //     .then((data) => setArticleData(data))
+    // }
+    // if (prevParams.countryCode !== countryCode) {
+    //   fetch(`https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${apiKey2}`)
+    //     .then((res) => res.json())
+    //     .then((data) => setArticleData(data))
+    // }
+
+    fetch(`https://newsapi.org/v2/top-headlines?q=${searchValue}&country=${countryCode}&apiKey=${apiKey2}`)
+        .then((res) => res.json())
+        .then((data) => setArticleData(data))
 
     // // Top Headlines sample
     // fetch('./sample-topheadlines.json', {
@@ -39,15 +59,15 @@ const App = () => {
     //    }
     //   })
 
-    // Everything sample
-    fetch('./sample-everything.json', {
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-      })
-      .then((res) => res.json())
-      .then((data) => setArticleData(data))
+    // // Everything sample
+    // fetch('./sample-everything.json', {
+    //   headers : { 
+    //     'Content-Type': 'application/json',
+    //     'Accept': 'application/json'
+    //    }
+    //   })
+    //   .then((res) => res.json())
+    //   .then((data) => setArticleData(data))
   }, [searchValue, countryCode])
   
   return (
