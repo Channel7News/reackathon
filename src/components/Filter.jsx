@@ -9,7 +9,7 @@ const Filter = (props) => {
   
   return (
     <StyledFilter>
-      <DateFilter/>
+      {/* <DateFilter/> */}
       <SearchBar handleSearchValue={handleSearchValue}/>
     </StyledFilter>
   );

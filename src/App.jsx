@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import ArticlesList from './components/ArticlesList'
 
 import './App.css'
@@ -31,7 +31,27 @@ const App = () => {
     setSearchValue(inputValue)
   }
 
+  const usePrevious = (value) => {
+    const ref = useRef()
+    useEffect(() => {
+      ref.current = value;
+    })
+    return ref.current;
+  }
+  const prevParams = usePrevious({searchValue, countryCode}) || {};
+  
   useEffect(() => {
+    // if (prevParams.searchValue !== searchValue) {
+    //   fetch(`https://newsapi.org/v2/everything?q=${searchValue}&apiKey=${apiKey2}`)
+    //     .then((res) => res.json())
+    //     .then((data) => setArticleData(data))
+    // }
+    // if (prevParams.countryCode !== countryCode) {
+    //   fetch(`https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${apiKey2}`)
+    //     .then((res) => res.json())
+    //     .then((data) => setArticleData(data))
+    // }
+
     fetch(
       `https://newsapi.org/v2/top-headlines?q=${searchValue}&category=${category}&country=${countryCode}&apiKey=${apiKey2}`
     )
