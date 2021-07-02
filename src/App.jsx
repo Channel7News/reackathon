@@ -13,8 +13,6 @@ import 'react-dates/lib/css/_datepicker.css'
 
 const App = () => {
   const [articleData, setArticleData] = useState()
-  const apiKey1 = '324369bedbcf4ccbb3c61134b2d0da9d'
-  const apiKey2 = '4528ed13b69744e581384c6fa39e00de'
 
   const [countryCode, setCountryCode] = useState('au')
   const handleCountryChange = (code) => {
@@ -41,31 +39,18 @@ const App = () => {
   const prevParams = usePrevious({searchValue, countryCode, category}) || {};
   
   useEffect(() => {
-    if (prevParams.searchValue !== searchValue) {
-      fetch(`https://newsapi.org/v2/everything?q=${searchValue}&apiKey=${apiKey1}`)
-        .then((res) => res.json())
-        .then((data) => setArticleData(data))
-    }
-    if (prevParams.countryCode !== countryCode || prevParams.category !== category) {
-      fetch(`https://newsapi.org/v2/top-headlines?category=${category}&country=${countryCode}&apiKey=${apiKey1}`)
+    if (prevParams.countryCode !== countryCode || prevParams.category !== category || prevParams.searchValue !== searchValue) {
+      fetch(`https://gnews.io/api/v4/top-headlines?topic=${category}&country=${countryCode}&q=${searchValue}&token=fca634dda05de54dc1035a652740d3a4`)
         .then((res) => res.json())
         .then((data) => setArticleData(data))
     }
     if (searchValue === "") {
     fetch(
-      `https://newsapi.org/v2/top-headlines?category=${category}&country=${countryCode}&apiKey=${apiKey1}`
+      `https://gnews.io/api/v4/top-headlines?topic=${category}&country=${countryCode}&token=fca634dda05de54dc1035a652740d3a4`
     )
       .then((res) => res.json())
       .then((data) => setArticleData(data))
     } 
-    // else {
-    //   fetch(
-    //     `https://newsapi.org/v2/top-headlines?q=${searchValue}&category=${category}&country=${countryCode}&apiKey=${apiKey2}`
-    //   )
-    //     .then((res) => res.json())
-    //     .then((data) => setArticleData(data))
-    // }
-
 
     // WHEN TESTING, use the sample.json files
 
@@ -78,14 +63,14 @@ const App = () => {
     // })
     
     // // Everything sample
-    //   fetch('./sample-everything.json', {
-    //     headers: {
-    //         'Content-Type': 'application/json',
-    //         Accept: 'application/json',
-    //       },
-    //   })
-    //     .then((res) => res.json())
-    //     .then((data) => setArticleData(data))
+    // fetch('./sample-everything.json', {
+    //   headers: {
+    //       'Content-Type': 'application/json',
+    //       Accept: 'application/json',
+    //     },
+    // })
+    //   .then((res) => res.json())
+    //   .then((data) => setArticleData(data))
   }, [searchValue, category, countryCode])
 
   return (
