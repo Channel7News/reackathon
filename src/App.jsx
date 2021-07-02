@@ -71,7 +71,7 @@ const App = () => {
     // })
     //   .then((res) => res.json())
     //   .then((data) => setArticleData(data))
-  }, [searchValue, category, countryCode])
+  }, [prevParams.countryCode, prevParams.category, prevParams.searchValue, searchValue, category, countryCode])
 
   return (
     <div className="App">
