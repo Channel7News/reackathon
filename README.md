@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Reackathon News App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Created by:
+
+- Nathan Blaga: [https://nathanblaga.me](http://nathanblaga.me)
+- Raymond Doan: [https://raymonddoan.me](http://raymonddoan.me)
+- Victor Zottman: [https://victorzottmann.com/](https://victorzottmann.com/)
 
 ## Available Scripts
 

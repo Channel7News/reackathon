@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { StyledSearchBar, StyledSearchButton, StyledSearchInput } from "../../styles/Filter";
 
 const SearchBar = (props) => {
   const {handleSearchValue} = props
@@ -17,17 +18,17 @@ const SearchBar = (props) => {
   }
 
   return (
-    <div>
+    <StyledSearchBar>
       <form onSubmit={handleSubmit}>
-        <input
+        <StyledSearchInput
           type="text"
           value={inputValue}
           placeholder="Search here.."
           onChange={handleInputChange}
         />
-        <button>Search</button>
+        <StyledSearchButton>Search</StyledSearchButton>
       </form>
-    </div>
+    </StyledSearchBar>
   );
 };
 
