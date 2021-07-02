@@ -38,32 +38,36 @@ const App = () => {
     })
     return ref.current;
   }
-  const prevParams = usePrevious({searchValue, countryCode}) || {};
+  const prevParams = usePrevious({searchValue, countryCode, category}) || {};
   
   useEffect(() => {
-    // if (prevParams.searchValue !== searchValue) {
-    //   fetch(`https://newsapi.org/v2/everything?q=${searchValue}&apiKey=${apiKey2}`)
-    //     .then((res) => res.json())
-    //     .then((data) => setArticleData(data))
-    // }
-    // if (prevParams.countryCode !== countryCode) {
-    //   fetch(`https://newsapi.org/v2/top-headlines?country=${countryCode}&apiKey=${apiKey2}`)
-    //     .then((res) => res.json())
-    //     .then((data) => setArticleData(data))
-    // }
-    if (searchValue === "") {
-    fetch(
-      `https://newsapi.org/v2/top-headlines?category=${category}&country=${countryCode}&apiKey=${apiKey2}`
-    )
-      .then((res) => res.json())
-      .then((data) => setArticleData(data))
-    } else {
-      fetch(
-        `https://newsapi.org/v2/top-headlines?q=${searchValue}&category=${category}&country=${countryCode}&apiKey=${apiKey2}`
-      )
+    if (prevParams.searchValue !== searchValue) {
+      fetch(`https://newsapi.org/v2/everything?q=${searchValue}&apiKey=${apiKey1}`)
         .then((res) => res.json())
         .then((data) => setArticleData(data))
     }
+    if (prevParams.countryCode !== countryCode || prevParams.category !== category) {
+      fetch(`https://newsapi.org/v2/top-headlines?category=${category}&country=${countryCode}&apiKey=${apiKey1}`)
+        .then((res) => res.json())
+        .then((data) => setArticleData(data))
+    }
+    if (searchValue === "") {
+    fetch(
+      `https://newsapi.org/v2/top-headlines?category=${category}&country=${countryCode}&apiKey=${apiKey1}`
+    )
+      .then((res) => res.json())
+      .then((data) => setArticleData(data))
+    } 
+    // else {
+    //   fetch(
+    //     `https://newsapi.org/v2/top-headlines?q=${searchValue}&category=${category}&country=${countryCode}&apiKey=${apiKey2}`
+    //   )
+    //     .then((res) => res.json())
+    //     .then((data) => setArticleData(data))
+    // }
+
+
+    // WHEN TESTING, use the sample.json files
 
     // Top Headlines sample
     // fetch('./sample-topheadlines.json', {
