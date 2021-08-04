@@ -10,7 +10,7 @@ import {
   ArticleDatePublished,
 } from "../styles/Article";
 
-const Article = ({ title, publishedAt, source, content, url, urlToImage }) => {
+const Article = ({ title, publishedAt, source, content, url, image }) => {
   return (
     <>
       <ArticleContainer>
@@ -19,7 +19,7 @@ const Article = ({ title, publishedAt, source, content, url, urlToImage }) => {
           <ArticleDatePublished><ArticleSource>{publishedAt.substring(0,10)} - {source.name}</ArticleSource></ArticleDatePublished>
           <ArticleDescription>{content}</ArticleDescription>
         </ArticleLeftSide>
-        <ArticleImage src={urlToImage} alt={title} />
+        <ArticleImage src={image} alt={title} />
       </ArticleContainer>
     </>
   );

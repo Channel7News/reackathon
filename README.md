@@ -6,7 +6,7 @@ Live website: [Link](https://reackathon-news-app.netlify.app/)
 
 - Nathan Blaga: [https://nathanblaga.me](http://nathanblaga.me)
 - Raymond Doan: [https://raymonddoan.me](http://raymonddoan.me)
-- Victor Zottman: [https://victorzottmann.com/](https://victorzottmann.com/)
+- Victor Zottman: [https://victorzottmann.com](https://victorzottmann.com)
 
 ## Instructions:
 
